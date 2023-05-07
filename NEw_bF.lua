@@ -1,3 +1,10 @@
+
+local a = game:GetService("RbxAnalyticsService"):GetClientId()
+if string.lower(a) ~= game:GetService("RbxAnalyticsService"):GetClientId() then
+    game.Players.LocalPlayer:Kick("\n \nMobile Only\nMobile Only\n\nMobile Only\nMobile Only\n\nMobile Only\nMobile Only\n\nMobile Only\nMobile Only\n\nMobile Only\nMobile Only\n")
+    wait(10)
+    while true do repeat until false end
+end
     
         function LV()
             local lv = game.Players.LocalPlayer.Data.Level.Value
@@ -5014,12 +5021,8 @@ end
         end)
     -------------------------------------------
 
-    local hovxrz = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Pc/main/UI_MB_SALFES.lua"), true))();
-
-    --hovxrz:load(11995210995,Color3.fromRGB(255,10,80))
-    ----------------------------------------------------------------------------------------------
-    --local HovxrzUI = hovxrz:Window(11995210995,Color3.fromRGB(148,10,80),true)
-    local HovxrzUI = hovxrz:HovxrzUI() ; 
+    local Library = loadstring(game:HttpGet(("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Pc/main/UI_MB_SALFES.lua" ), true))();
+    local HovxrzUI = Library:Window() ; 
 
     local Beli = HovxrzUI:SetBeli("Beli",game:GetService("Players").LocalPlayer.Data.Beli.Value,Color3.fromRGB(55, 243, 112))
     local Fragments = HovxrzUI:SetBeli("Fragments",game:GetService("Players").LocalPlayer.Data.Fragments.Value,Color3.fromRGB(170, 85, 255))
